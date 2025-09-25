@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odonto Master</title>
+    <link rel="shortcut icon" href="Imagens/Logo.jpg" type="image/jpeg">
+
+    <link rel="stylesheet" href="Styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <img src="Imagens/Logo.jpg" alt="Logo Odonto Master" width="130px">
+            <h1>Odonto Master</h1>
+        </header>
+        <main>
+            <div id="painel">
+                <img src="Imagens/Odonto.jpg" alt="Logo Lista" width="250px">
+                <h2>Painel de Atendimento</h2>
+            </div>
+            <div id="preenchimento">
+                <p><label for="inPaciente">Paciente: </label><input type="text" id="inPaciente"></p>
+                <button id="btAdd" type="submit">Adicionar</button>
+                <button id="btUrgencia" type="submit">Urgência</button>
+                <button id="btAtendimento" type="submit">Atender</button>
+                
+            </div>
+
+            <div id="saida">
+                <h3 id="outAtendimento"></h3>
+                <pre id="outFilaAtendimento"></pre>
+            </div>
+        </main>
+
+        <script src="Scripts/index.js"></script>
+    </div>
+
+
+</body>
+</html>

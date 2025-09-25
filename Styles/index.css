@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Oswald", "Bebas Neue", "Raleway", sans-serif;
+    margin: auto;
+}
+
+header {
+    align-self: flex-start;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    height: 140px;
+    border-bottom: 3px solid #30A8B8;
+}
+header h1 {
+    color: #78568e;
+    text-shadow: 1px 1px 2px #30a8b8a0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #30A8B8;
+    padding: 20px;
+    width: 50%;
+    border-radius: 0 0 10px 10px;
+}
+
+#painel h2{
+    border-bottom: 2px solid #30A8B8;
+    margin-bottom: 20px;
+    color: #78568e;
+    text-shadow: 1px 1px 2px #30a8b82d;
+    text-align: center;
+    font-size: 1.8rem;
+}
+#painel img {
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px rgba(48, 48, 48, 0.33);
+}
+
+#preenchimento {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+#preenchimento input{
+    height: 25px;
+    width: 350px;
+    border: 2px solid #78568e;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 4px;
+}
+
+#preenchimento button {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 4px;
+    background-color: transparent;
+    border: 2px solid #78568e;
+    box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.804);
+}
+#preenchimento button:hover {
+    background-color: #78568e;
+    color: #40ddf1;
+}
+
+#saida {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 1.7rem;
+    font-family: "Raleway", sans-serif;
+}
+
+#saida h3{
+    text-decoration: underline;
+    padding: 10px 10px 10px 0;
+
+}
+
+@media (max-width: 860px){
+    
+    main {
+        width: 80%;
+    }
+
+    #preenchimento {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #preenchimento input{
+        height: 26px;
+        width: 240px;
+    }
+
+    #saida {
+        font-size: 1.3rem;
+    }
+}
